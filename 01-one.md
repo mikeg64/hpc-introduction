@@ -6,7 +6,7 @@ minutes: 10
 ---
 > ## Learning Objectives {.objectives}
 >
-> * Learning objective 1
+> * Learning objective 1 basic c programming
 > * Learning objective 2
 
 Paragraphs of text
