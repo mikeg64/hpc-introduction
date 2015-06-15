@@ -436,10 +436,8 @@ a:hover, a:focus {
 }
 
 .deck-container {
-  
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
-  
   background: #f4fafe;
   /* Old browsers */
   background: -moz-linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
@@ -456,9 +454,6 @@ a:hover, a:focus {
   /* W3C */
   background-attachment: fixed;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-
-  background-image: url("slidebkg.gif");
-  background-size: cover;
 }
 .deck-container > .slide {
   padding: 0 48px;
