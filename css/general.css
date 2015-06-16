@@ -4,25 +4,25 @@
  Version: 2.0
 *****************************************************/
 /*@import url(print.css); */
-body {  font-size: 78%; font-family: Arial, Verdana, Helvetica, sans-serif; margin: 0; padding: 0; background-color: #ffffff;}  
+body {  font-size: 155%; font-family: Arial, Verdana, Helvetica, sans-serif; margin: 0; padding: 0; background-color: #ffffff;}  
 p {margin-top: 20px; margin-left: 50px; margin-right: 50px;}
 h1,h2,h3,h4,h5,h6 {/* clear: left;*/font-family: Arial, Verdana, Helvetica, sans-serif;color: #00A7F5;margin: 30px 0 30px 0; margin-left: 50px;    } 
-h1 {  font-size: 155%; }  
-h2 { font-size: 145%; } 
-h3 { font-size: 130%; } 
-h4 { font-size: 120%; } 
-h5 { font-size: 110%; } 
-h6 { font-size: 100%; }
+h1 {  font-size: 280%; }  
+h2 { font-size: 260%; } 
+h3 { font-size: 230%; } 
+h4 { font-size: 210%; } 
+h5 { font-size: 190%; } 
+h6 { font-size: 170%; }
 li h1, li h2, li h3, li h4, li h5, li h6 { background-image: none; padding-left: 0;} /* when using little squares */
 hr { height: 1px; color: #9C9C9C; width: 90%; }
 img { border: 0; } 
 legend { color: black; } 
-table {	font-size: 100%; } 
+table {	font-size: 110%; } 
 table tr th { background-color: #92BBE7; text-align: left; color: black; font-size: 110%; } 
 td {  empty-cells: show; } 
 ul { list-style-type: disc; } 
-kbd, pre { font-size: 120%; } 
-code { font-size: 120%; background-color: #eeeeee; } 
+kbd, pre { font-size: 110%; } 
+code { font-size: 110%; background-color: #eeeeee; } 
 #globalNavigation { clear: both; background-color: #000;  color: white; padding: 7px; font-weight: normal; border-bottom: 1px solid #ffffff; } 
 #globalNavigation span { padding-top: 4px; } 
 #globalNavigation span a { padding: 3px; color: white; text-decoration: none; } 
@@ -249,3 +249,55 @@ span.sIFR-alternate { position: absolute; left: 0; top: 0; width: 0; height: 0; 
 
 #header { background-color: #27004F; }
 #subGlobalNavigation ul li a  { border-color:  #27004F; }
+
+
+/* Objectives, Callout Box, Challenges and prerequisites are now rendered as
+Bootstrap panels.  There's a pandoc error with rendering headers nested under
+blockquote: these headers don't preserve attributes.  It means we have to
+manually set styles for these headers to look like Bootstrap's "panel-title"
+class. */
+.panel-heading h1,
+.panel-heading h2,
+.panel-heading h3,
+.panel-heading h4,
+.panel-heading h5,
+.panel-heading h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: inherit;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+/* Make space between the glyphicon and the rest of the header */
+.panel-heading h1 span,
+.panel-heading h2 span,
+.panel-heading h3 span,
+.panel-heading h4 span,
+.panel-heading h5 span,
+.panel-heading h6 span {
+    padding-right: 10px;
+}
+
+/* Make the CSS compatible with Pandoc <= 1.13.2 and Pandoc > 1.14. */
+h1.panel,
+h2.panel,
+h3.panel,
+h4.panel,
+h5.panel,
+h6.panel {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    color: inherit;
+    background-color: inherit;
+    background-image: inherit;
+    box-shadow: none;
+}
+
+
+
+
+

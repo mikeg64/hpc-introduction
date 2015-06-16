@@ -1,4 +1,5 @@
 ---
+coursetitle: The Course
 layout: page
 title: Lesson Title
 ---

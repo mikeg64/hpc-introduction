@@ -1,5 +1,6 @@
 ---
 layout: page
+coursetitle: The Course
 title: Lesson Title
 subtitle: Topic Title One
 minutes: 10
