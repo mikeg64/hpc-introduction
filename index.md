@@ -15,7 +15,7 @@ This hands-on training course covers the subjects of;
 > ## Prerequisites {.prereq}
 >
 >This course assumes that the students have a basic knowledge of Linux as covered by our [Introduction to Linux course ( CIC6001a )](http://www.shef.ac.uk/cics/research/training/linux).
->[Linux Cheatsheet](http://rcg.group.shef.ac.uk/courses/linux/shell-cheatsheet.html)
+>See also the [Linux Cheatsheet](http://rcg.group.shef.ac.uk/courses/linux/shell-cheatsheet.html).
 
 
 > ## Getting ready {.getready}
