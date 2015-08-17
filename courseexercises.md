@@ -9,7 +9,8 @@ title: Course Exercises
  *   Start an interactive session on iceberg using the Sun Global Desktop
  *   Start a file transfer client and move files to and from iceberg
  *   Extract the course examples, change directory to a directory you will be using for the course and type
-~~~ {.bash}
+
+~~~{.bash}
  tar –zxvf /usr/local/courses/hpc_intro.tgz
 ~~~
                    
@@ -36,6 +37,8 @@ R can then be run with
 ~~~{.bash}
  $ R
 ~~~
+
+From the R session you can run a series of commands to plot the inflammation data.
 
 ~~~{r,include=FALSE}
  dat <- read.csv(file = "../data/inflammation-01.csv", header = FALSE)
@@ -69,7 +72,8 @@ Further details on R at
 
 ### Submitting jobs to Sun Grid Engine
 From the course directory
-~~~ {.bash}
+
+~~~{.bash}
  cd sge
 ~~~
 
@@ -81,13 +85,15 @@ From an interactive session
 Compile the program using the fortran compiler
 
 First load the compiler module
-~~~ {.bash}
+
+~~~{.bash}
  module load compilers/intel/14.0
 ~~~
 
 
 Compile the fish program
-~~~ {.bash}
+
+~~~{.bash}
  ifort fish.f90 -o fish
 ~~~
 
@@ -118,9 +124,7 @@ Compile the fish program
   * Create an input file which will contain the 
       expected input data ' that you would normally 
       enter at the keyboard'.
-  * Prepare a job submission script which will 
-        * read the data from your input file
-        * write the results into a job output file or another file of your choice.
+  * Prepare a job submission script which will read the data from your input file and write the results into a job output file or another file of your choice.
   * Submit the script to SGE.
   * Add commands to join the error and normal output into one single file
       and also to email you about the progress of your job. 
