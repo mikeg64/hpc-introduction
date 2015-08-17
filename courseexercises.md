@@ -78,6 +78,7 @@ From the course directory
 ~~~
 
 From an interactive session
+
  * Load the compiler module
  * Compile the fish program
  * Run test1, test2 and test3

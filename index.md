@@ -34,13 +34,19 @@ This hands-on training course covers the subjects of;
 7.  [Running Applications on the HPC Cluster](http://www.shef.ac.uk/cics/research/hpc/using/interactive)
 8.  [Using the Job Scheduler](http://www.shef.ac.uk/cics/research/hpc/using/runbatch)
 9.  [GPUs and Remote Visualisation](http://rcg.group.shef.ac.uk/iceberg/gpu/)
-10. [Beyond Iceberg ](http://www.shef.ac.uk/wrgrid/n8)
+10. [Beyond Iceberg ](http://www.shef.ac.uk/cics/research/hpc/iceberg/costs)
 
 
 ## Other Resources
 
 *   [Shared Notepad](https://etherpad.mozilla.org/CzIWonFrAs)
 *   [Course Examples](courseexercises.html)
-*   [Slides](http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_sheffield_intro_2015.ppt)
+*   [Slides](http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_sheffield_intro_2016.ppt)
 *   [Getting Started Notes on HPC at Sheffield](http://rcg.group.shef.ac.uk/iceberg/icebergDocumentation.pdf)
+
+## Software Downloads
+
+*   [Putty ssh client (Windows)](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+*   [Win SCP file transfer Client (Windows)](http://winscp.net/eng/download.php)
+*   [Tiger VNC Client for Remote Visualisation](http://sourceforge.net/projects/tigervnc/)
 
