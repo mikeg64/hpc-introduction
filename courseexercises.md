@@ -9,7 +9,7 @@ title: Course Exercises
  *   Start an interactive session on iceberg using the Sun Global Desktop
  *   Start a file transfer client and move files to and from iceberg
  *   Extract the course examples, change directory to a directory you will be using for the course and type
-~~~ {.shell}
+~~~ {.bash}
  tar –zxvf /usr/local/courses/hpc_intro.tgz
 ~~~
                    
@@ -27,13 +27,13 @@ title: Course Exercises
 For this practice session we will run the R application
 The lastest version of R can be loaded with
 
-~~~{.shell}
+~~~{.bash}
  module load apps/R/3.2.0
 ~~~
 
 R can then be run with
 
-~~~{.shell}
+~~~{.bash}
  $ R
 ~~~
 
@@ -69,7 +69,7 @@ Further details on R at
 
 ### Submitting jobs to Sun Grid Engine
 From the course directory
-~~~ {.shell}
+~~~ {.bash}
  cd sge
 ~~~
 
@@ -81,13 +81,13 @@ From an interactive session
 Compile the program using the fortran compiler
 
 First load the compiler module
-~~~ {.shell}
+~~~ {.bash}
  module load compilers/intel/14.0
 ~~~
 
 
 Compile the fish program
-~~~ {.shell}
+~~~ {.bash}
  ifort fish.f90 -o fish
 ~~~
 

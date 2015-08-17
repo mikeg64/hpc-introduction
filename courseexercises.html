@@ -85,7 +85,7 @@
 <ul>
 <li>Start an interactive session on iceberg using the Sun Global Desktop</li>
 <li>Start a file transfer client and move files to and from iceberg</li>
-<li>Extract the course examples, change directory to a directory you will be using for the course and type <sub>~</sub> {.shell} tar –zxvf /usr/local/courses/hpc_intro.tgz <sub>~</sub></li>
+<li>Extract the course examples, change directory to a directory you will be using for the course and type <sub>~</sub> {.bash} tar –zxvf /usr/local/courses/hpc_intro.tgz <sub>~</sub></li>
 </ul>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
@@ -98,9 +98,9 @@
 <h2 id="practice-session-2">Practice Session 2</h2>
 <h3 id="running-applications-on-the-hpc-cluster">Running Applications on the HPC Cluster</h3>
 <p>For this practice session we will run the R application The lastest version of R can be loaded with</p>
-<pre class="shell"><code> module load apps/R/3.2.0</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"> <span class="kw">module</span> load apps/R/3.2.0</code></pre></div>
 <p>R can then be run with</p>
-<pre class="shell"><code> $ R</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"> $ <span class="kw">R</span></code></pre></div>
 <pre class="{r,include=false}"><code> dat &lt;- read.csv(file = &quot;../data/inflammation-01.csv&quot;, header = FALSE)
  avg_day_inflammation &lt;- apply(dat, 2, mean)
  plot(avg_day_inflammation)</code></pre>
@@ -118,11 +118,11 @@
 </section>
 <h2 id="practice-session-3">Practice Session 3</h2>
 <h3 id="submitting-jobs-to-sun-grid-engine">Submitting jobs to Sun Grid Engine</h3>
-<p>From the course directory <sub>~</sub> {.shell} cd sge <sub>~</sub></p>
+<p>From the course directory <sub>~</sub> {.bash} cd sge <sub>~</sub></p>
 <p>From an interactive session * Load the compiler module * Compile the fish program * Run test1, test2 and test3</p>
 <p>Compile the program using the fortran compiler</p>
-<p>First load the compiler module <sub>~</sub> {.shell} module load compilers/intel/14.0 <sub>~</sub></p>
-<p>Compile the fish program <sub>~</sub> {.shell} ifort fish.f90 -o fish <sub>~</sub></p>
+<p>First load the compiler module <sub>~</sub> {.bash} module load compilers/intel/14.0 <sub>~</sub></p>
+<p>Compile the fish program <sub>~</sub> {.bash} ifort fish.f90 -o fish <sub>~</sub></p>
 <p>Start with test1 which is a simple job script. Submit test1 to the batch queue and use qstat to follow its progress.</p>
 <p>After running the test1 script have a look at all the other test* scripts in the numeric order. It is important that you follow the numeric order as the problems build up using the previous solutions. The comments in each script file tells you what to do next.</p>
 <p>This directory contains an artificial program that calculates the effect of quotas on the fish stocks. We will practice using Sun Grid Engine by running this technically simple problem, the politicians prefer not to know about! The program is named fish and resides in this directory.</p>
