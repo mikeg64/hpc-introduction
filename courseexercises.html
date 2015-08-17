@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="generator" content="pandoc">
-    <meta name="description" content="Using HPC at The University of Sheffield">
+    <meta name="description" content="Course Exercises">
 
     <title>Introduction to High Performance Computing</title>
     
@@ -80,49 +80,62 @@
       <article>
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-                    <h1 class="title">Using HPC at The University of Sheffield</h1>
-          <p>This hands-on training course covers the subjects of;</p>
+                    <h1 class="title">Course Exercises</h1>
+          <h2 id="practice-session-1">Practice Session 1</h2>
 <ul>
-<li>What is High Performance Computing,</li>
-<li>Managing data on the HPC facility,</li>
-<li>Running interactive and batch jobs,</li>
-<li>Accessing the available software.</li>
+<li>Start an interactive session on iceberg using the Sun Global Desktop</li>
+<li>Start a file transfer client and move files to and from iceberg</li>
+<li>Extract the course examples, change directory to a directory you will be using for the course and type <sub>~</sub> {.shell} tar –zxvf /usr/local/courses/hpc_intro.tgz <sub>~</sub></li>
 </ul>
-<section class="prereq panel panel-warning">
+<section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 id="prerequisites"><span class="glyphicon glyphicon-education"></span>Prerequisites</h2>
+<h2 id="case-study"><span class="glyphicon glyphicon-pencil"></span>Case Study</h2>
 </div>
 <div class="panel-body">
-<p>This course assumes that the students have a basic knowledge of Linux as covered by our <a href="http://www.shef.ac.uk/cics/research/training/linux">Introduction to Linux course ( CIC6001a )</a>. See also the <a href="http://rcg.group.shef.ac.uk/courses/linux/shell-cheatsheet.html">Linux Cheatsheet</a>.</p>
+<p>We are studying inflammation in patients who have been given a new treatment for arthritis we need to analyze the firts sets of inflammation data. The data sets are held in comma separated variable (csv) format. Each row holds the observations for one patient. Each column holds the inflammation measured in one day.</p>
 </div>
 </section>
-<section class="getready panel panel-warning">
+<h2 id="practice-session-2">Practice Session 2</h2>
+<h3 id="running-applications-on-the-hpc-cluster">Running Applications on the HPC Cluster</h3>
+<p>For this practice session we will run the R application The lastest version of R can be loaded with</p>
+<pre class="shell"><code> module load apps/R/3.2.0</code></pre>
+<p>R can then be run with</p>
+<pre class="shell"><code> $ R</code></pre>
+<pre class="{r,include=false}"><code> dat &lt;- read.csv(file = &quot;../data/inflammation-01.csv&quot;, header = FALSE)
+ avg_day_inflammation &lt;- apply(dat, 2, mean)
+ plot(avg_day_inflammation)</code></pre>
+<p>to exit R type</p>
+<pre class="{r,echo=false}"><code> q()</code></pre>
+<p>Further details on R at <a href="http://rcg.group.shef.ac.uk/iceberg/software/apps/R.html">R documentation for iceberg</a></p>
+<section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2 id="getting-ready"><span class="glyphicon glyphicon-check"></span>Getting ready</h2>
+<h2 id="case-study-1"><span class="glyphicon glyphicon-pencil"></span>Case Study</h2>
 </div>
 <div class="panel-body">
-<p>Apply for an account on the HPC cluster (Iceberg) for details see the <a href="http://www.sheffield.ac.uk/cics/research/hpc/iceberg/register">getting started information</a></p>
+<p>We will run a series of simulations of Fish populations.</p>
+<p>Thisa artificial program calculates the effect of quotas on the fish stocks. We will practice using Sun Grid Engine by running this technically simple problem, the politicians prefer us not to know about!</p>
 </div>
 </section>
-<h2 id="topics">Topics</h2>
-<ol style="list-style-type: decimal">
-<li><a href="http://www.sheffield.ac.uk/cics/research/hpc">What is High Performance Computing</a></li>
-<li><a href="http://www.sheffield.ac.uk/cics/research/hpc/iceberg">HPC at The University of Sheffield</a></li>
-<li><a href="http://www.sheffield.ac.uk/cics/research/hpc/iceberg/register">Accessing HPC at TUOS</a></li>
-<li><a href="http://www.shef.ac.uk/cics/research">Get Help and Information</a></li>
-<li><a href="http://www.shef.ac.uk/cics/research/hpc/data">Using Storage and Managing Data</a></li>
-<li><a href="http://rcg.group.shef.ac.uk/iceberg/software/index.html#software">Software on the HPC Cluster</a></li>
-<li><a href="http://www.shef.ac.uk/cics/research/hpc/using/interactive">Running Applications on the HPC Cluster</a></li>
-<li><a href="http://www.shef.ac.uk/cics/research/hpc/using/runbatch">Using the Job Scheduler</a></li>
-<li><a href="http://rcg.group.shef.ac.uk/iceberg/gpu/">GPUs and Remote Visualisation</a></li>
-<li><a href="http://www.shef.ac.uk/wrgrid/n8">Beyond Iceberg</a></li>
-</ol>
-<h2 id="other-resources">Other Resources</h2>
+<h2 id="practice-session-3">Practice Session 3</h2>
+<h3 id="submitting-jobs-to-sun-grid-engine">Submitting jobs to Sun Grid Engine</h3>
+<p>From the course directory <sub>~</sub> {.shell} cd sge <sub>~</sub></p>
+<p>From an interactive session * Load the compiler module * Compile the fish program * Run test1, test2 and test3</p>
+<p>Compile the program using the fortran compiler</p>
+<p>First load the compiler module <sub>~</sub> {.shell} module load compilers/intel/14.0 <sub>~</sub></p>
+<p>Compile the fish program <sub>~</sub> {.shell} ifort fish.f90 -o fish <sub>~</sub></p>
+<p>Start with test1 which is a simple job script. Submit test1 to the batch queue and use qstat to follow its progress.</p>
+<p>After running the test1 script have a look at all the other test* scripts in the numeric order. It is important that you follow the numeric order as the problems build up using the previous solutions. The comments in each script file tells you what to do next.</p>
+<p>This directory contains an artificial program that calculates the effect of quotas on the fish stocks. We will practice using Sun Grid Engine by running this technically simple problem, the politicians prefer not to know about! The program is named fish and resides in this directory.</p>
+<p>When you come to test 3,</p>
+<p>Your task is to run the fish program under SGE using qsub. The following steps are advisable: * Run the program interactively to see what it does and what input it expects from the user. * Create an input file which will contain the expected input data ‘that you would normally enter at the keyboard’. * Prepare a job submission script which will * read the data from your input file * write the results into a job output file or another file of your choice. * Submit the script to SGE. * Add commands to join the error and normal output into one single file and also to email you about the progress of your job.</p>
+<h2 id="practice-session-4">Practice Session 4</h2>
+<h3 id="submitting-a-task-array">Submitting a Task Array</h3>
+<p>Continuing with the fish population program</p>
+<p>Run the SGE task array example Run test4, test5</p>
+<h2 id="resource-links">Resource Links</h2>
 <ul>
 <li><a href="https://etherpad.mozilla.org/CzIWonFrAs">Shared Notepad</a></li>
-<li><a href="courseexercises.html">Course Examples</a></li>
-<li><a href="http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_sheffield_intro_2015.ppt">Slides</a></li>
-<li><a href="http://rcg.group.shef.ac.uk/iceberg/icebergDocumentation.pdf">Getting Started Notes on HPC at Sheffield</a></li>
+<li><a href="http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_intro.tgz">Course Examples</a></li>
 </ul>
         </div>
       </div>
