@@ -30,10 +30,10 @@ This hands-on training course covers the subjects of;
 3.  [Accessing HPC at TUOS](http://www.sheffield.ac.uk/cics/research/hpc/iceberg/register)
 4.  [Get Help and Information](http://www.shef.ac.uk/cics/research)
 5.  [Using Storage and Managing Data](http://www.shef.ac.uk/cics/research/hpc/data)
-6.  [Software on the HPC Cluster](http://rcg.group.shef.ac.uk/iceberg/software/index.html#software)
+6.  [Software on the HPC Cluster](http://rcg.group.shef.ac.uk/icesoftonly)
 7.  [Running Applications on the HPC Cluster](http://www.shef.ac.uk/cics/research/hpc/using/interactive)
 8.  [Using the Job Scheduler](http://www.shef.ac.uk/cics/research/hpc/using/runbatch)
-9.  [GPUs and Remote Visualisation](http://rcg.group.shef.ac.uk/iceberg/gpu/)
+9.  [GPUs and Remote Visualisation](http://rcg.group.shef.ac.uk/icesoftonly/gpu/index.html#gpuintro)
 10. [Beyond Iceberg ](http://www.shef.ac.uk/cics/research/hpc/iceberg/costs)
 
 
