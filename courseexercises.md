@@ -159,6 +159,6 @@ Run test4, test5
 
 ## Resource Links
 
-*   [Shared Notepad](https://etherpad.mozilla.org/CzIWonFrAs)
+*   [Shared Notepad](https://public.etherpad-mozilla.org/p/hpcintro_sheffield)
 *   [Course Examples](http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_intro.tgz)
 

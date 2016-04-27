@@ -30,19 +30,19 @@ This hands-on training course covers the subjects of;
 3.  [Accessing HPC at TUOS](http://www.sheffield.ac.uk/cics/research/hpc/iceberg/register)
 4.  [Get Help and Information](http://www.shef.ac.uk/cics/research)
 5.  [Using Storage and Managing Data](http://www.shef.ac.uk/cics/research/hpc/data)
-6.  [Software on the HPC Cluster](http://rcg.group.shef.ac.uk/icesoftonly)
+6.  [Software on the HPC Cluster](http://docs.iceberg.shef.ac.uk/)
 7.  [Running Applications on the HPC Cluster](http://www.shef.ac.uk/cics/research/hpc/using/interactive)
 8.  [Using the Job Scheduler](http://www.shef.ac.uk/cics/research/hpc/using/runbatch)
-9.  [GPUs and Remote Visualisation](http://rcg.group.shef.ac.uk/icesoftonly/gpu/index.html#gpuintro)
+9.  [GPUs and Remote Visualisation](http://docs.iceberg.shef.ac.uk/en/latest/gpu)
 10. [Beyond Iceberg ](http://www.shef.ac.uk/cics/research/hpc/iceberg/costs)
 
 
 ## Other Resources
 
-*   [Shared Notepad](https://etherpad.mozilla.org/CzIWonFrAs)
+*   [Shared Notepad](https://public.etherpad-mozilla.org/p/hpcintro_sheffield)
 *   [Course Examples](courseexercises.html)
 *   [Slides](http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_sheffield_intro_2016.ppt)
-*   [Getting Started Notes on HPC at Sheffield](http://rcg.group.shef.ac.uk/iceberg/icebergDocumentation.pdf)
+*   [Getting Started Notes on HPC at Sheffield](http://rcg.group.shef.ac.uk/courses/hpcintro/donwnloads/iceberg.pdf)
 
 ## Software Downloads
 
