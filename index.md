@@ -42,7 +42,7 @@ This hands-on training course covers the subjects of;
 *   [Shared Notepad](https://public.etherpad-mozilla.org/p/hpcintro_sheffield)
 *   [Course Examples](courseexercises.html)
 *   [Slides](http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/hpc_sheffield_intro_2016.ppt)
-*   [Getting Started Notes on HPC at Sheffield](http://rcg.group.shef.ac.uk/courses/hpcintro/donwnloads/iceberg.pdf)
+*   [Getting Started Notes on HPC at Sheffield](http://rcg.group.shef.ac.uk/courses/hpcintro/downloads/iceberg.pdf)
 
 ## Software Downloads
 
